@@ -1,0 +1,24 @@
+<%- include('partials/header'); -%>
+<section id="upload">
+    <div class="container">
+        <div class="row">
+            <form action="http://localhost:3000/upload" method="post" enctype="multipart/form-data">
+                <!-- <div class="part">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" value="Mike" name="name"><br><br>
+                </div>
+
+                <div class="part">
+                    <label for="lname">Last name:</label><br>
+                    <input type="number" id="lname" name="age"><br><br>
+                </div> -->
+                <input type="file" id="avatar" name="avatar" multiple accept="image/jpg, image/jpeg">
+                <input type="submit" value="Upload" id="_submit_">
+            </form>
+            
+        </div>
+    </div>
+</section>
+<%- include('partials/bootstarp_footer.ejs'); -%>
+<script src="./js/upload.js"></script>
+<%- include('partials/footer'); -%>

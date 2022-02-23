@@ -1,0 +1,50 @@
+<%- include('partials/header'); -%>
+<%- include('partials/main'); -%>
+<section id="showcase">
+    <div class="container">
+        
+     
+      <% /* %>
+        <% for(var i = 0; i < personalData.length; i++) { %>
+          <div class="col-lg-4">
+            <div class="card border-danger mb-3">
+              <img src=<%= personalData[i].image_url%> alt="random image" class="img-fluid w-100">
+                <div class="card-body">
+                  <h4 class="card-title"><%= personalData[i].image_name %></h4>   
+                </div>
+            </div>
+          </div>
+          <% } %>
+      <% */ %>
+        <div class="row">
+          <% for(var i = 0; i < dummy_data.length; i++) { %>
+            
+            <div class="col-lg-4">
+              <div class="card border-danger mb-3">
+                <div class="card_header">
+                  <div class="view_buttons">
+                    
+                    <button class="example-image-link">
+                      <i class="far fa-eye-slash" data-original=<%= dummy_data[i].src.large%>></i>
+                    </button>
+                  </div> 
+                  <img src=<%= dummy_data[i].src.landscape%> alt="random image" class="img-fluid w-100">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title"><%= dummy_data[i].photographer %></h4>   
+                  <a href="/details" class="btn btn-primary">see full view</a>
+                </div>
+                  
+              </div>
+            </div>
+            <% } %>
+          </div>
+    </div>
+</section>
+<div class="model">
+    <img src="" alt="pop up image" class="full-img img-fluid">
+</div>
+
+<%- include('partials/bootstarp_footer.ejs'); -%>
+<script src="./js/custom.js"></script>
+<%- include('partials/footer'); -%>

@@ -1,0 +1,236 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: 0;
+
+    }
+    a,a:hover{
+        text-decoration: none;
+        display: inline-block;
+    
+    }
+    .dev-stage-text{
+        padding-top: 150px;
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+    .navbar {
+        background: #212b36;
+        color: #fff;
+        padding: 26px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 99;
+    }
+
+    /* .navbar-brand {
+        color: #E00098;
+        font-family: 'Inter', sans-serif;
+    } */
+    .navbar-brand img{
+        height: 33px;
+    }
+
+    .btn-outline-success {
+        color: #fff;
+        border-color: #696b6d;
+        font-weight: 400;
+        font-family: 'Inter', sans-serif;
+
+    }
+
+    .btn-outline-success:hover {
+        background: #E00098;
+        border-color: #696b6d;
+
+    }
+    /* banner part start */
+    #banner{
+        
+        /* background: url(https://graphql.org/img/graph-wash.png);
+        background-position: center;
+        background-size: cover; */
+        background: #000;
+        position: relative;
+    }
+
+    #banner .overly{
+        padding-top: 270px;
+        padding-bottom: 100px;
+        width: 100%;
+        height: 100%;
+       background: url(https://graphql.org/img/graph-wash.png);
+        background-position: center;
+        background-size: cover;
+
+    }
+    .banner_text h3{
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 40px;
+        color: #fff;
+        text-transform: capitalize;
+    }
+    .banner_text p{
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: 'Syne Tactile', cursive; 
+        padding-top: 20px;
+    }
+    .banner_text .couple_button{
+        padding-top: 20px;
+    }
+    .banner_text .couple_button a{
+        padding: 10px 14px;
+        background: transparent;
+        border: 1px solid #868686;
+        border-radius: 5px;
+        text-transform: uppercase;
+        color: #fff;
+        font-family: 'Syne Tactile', cursive; 
+        transition: all linear .5s;
+
+    }
+    .banner_text .couple_button a:hover{
+        background: #E00098;
+        border-color: #E00098;
+    }
+    /* banner part end */
+    /* showcase part start */
+    #showcase{
+        padding-bottom: 150px;
+        padding-top: 150px;
+        background: #212B36;
+    }
+    .card .btn{
+        background: #313c52;
+        color: #fff;
+        font-family: 'Syne Tactile', cursive; 
+        font-size: 16px;
+    }
+    .card{
+        border: none;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .card img{
+        height: 300px;
+
+    }
+    .card .card_header{
+        position: relative;
+    }
+    .card-body h4{
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        text-transform: capitalize;
+        font-size: 18px;
+        color: #fff;
+    }
+    .card-body{
+        background: #494055;
+    }
+    .card .card_header::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(75, 70, 95, 0.52);
+        top: -100%;
+        left: 0;
+        transition: all .6s;
+        pointer-events: none;
+        
+    }
+    .card:hover .card_header::before{
+        top: 0;
+    }
+    .view_buttons{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: all .8s;
+    }
+    .view_buttons button{
+        background: transparent;
+        border: none;
+    }
+    .view_buttons i{
+        color: #fff;
+        font-size: 20px;
+    }
+    .card:hover .view_buttons{
+        opacity: 1;
+    }
+    /* showcase part End */
+
+    /* model part start */
+    .model{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(63, 83, 90, 0.534);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        opacity: 0;
+        pointer-events: none;
+        transition: all linear .5s;
+    }
+    .model.open{
+        opacity: 1;
+        pointer-events: all;
+    }
+    /* model part End */
+
+    /* upload part start */
+    #upload{
+        background: #6990F2;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        
+    }
+    #upload form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #upload form input#avatar{
+        color: #a08caa;
+        background: #fff;
+        border-radius: 6px;
+        padding: 20px 10px;
+        text-transform: capitalize;
+
+    }
+    #_submit_{
+        margin-top: 20px;
+        padding: 10px 13px;
+        text-transform: capitalize;
+        border-radius: 10px;
+        font-weight: 500;
+        border: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+    /* upload part End */
+
+    
+</style>
